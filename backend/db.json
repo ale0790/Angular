@@ -1,0 +1,62 @@
+{
+  "movies": [
+    {
+      "id": 1,
+      "title": "Liga da Justiça - SnyderCut",
+      "director": "Zack Snyder",
+      "genres": "Ação",
+      "year": 1995
+    },
+    {
+      "id": 2,
+      "title": "Godzilla vs Kong",
+      "director": "Adam Wingard",
+      "genres": "Ação",
+      "year": 1997
+    },
+    {
+      "title": "A volta dos que nao foram",
+      "director": "alessandro",
+      "genres": "comédia",
+      "year": 2021,
+      "id": 3
+    },
+    {
+      "title": "A volta dos que nao foram",
+      "director": "alessandro",
+      "genres": "comédia",
+      "year": 2021,
+      "id": 4
+    },
+    {
+      "title": "A volta dos que nao foram",
+      "director": "alessandro",
+      "genres": "comédia",
+      "year": 2021,
+      "id": 5
+    }
+  ],
+  "series": [
+    {
+      "id": 1,
+      "title": "Manda Vision",
+      "director": "Zack Shaeffer",
+      "genres": "Comédia",
+      "year": 2021
+    },
+    {
+      "id": 2,
+      "title": "Titanic",
+      "director": "Alessandro Guimarães",
+      "genres": "Comédia",
+      "year": 2022
+    },
+    {
+      "id": 3,
+      "title": "As tranças de um careca",
+      "director": "Poliana Lubacheviski",
+      "genres": "Terror",
+      "year": 1998
+    }
+  ]
+}

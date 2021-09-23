@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.red { color: red}
+
+.vertical-middle { 
+    vertical-align:middle; 
+}
+
+
+.btn_add {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.card-home {
+    margin-top: 0.5rem;
+    background-color: #f5f5f5;
+}
+
+.card-home .card-title{
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.card-home .cart-subtitle{
+    font-size: 0.8rem;
+}
