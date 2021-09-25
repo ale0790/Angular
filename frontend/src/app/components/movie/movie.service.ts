@@ -10,9 +10,37 @@ import { API } from "../../app.api";
 })
 export class MovieService {
 
+  
   constructor(private http: HttpClient) {}
 
   create(movie: Movie): Observable<Movie> { 
     return this.http.post<Movie>(`${API}/movies`, movie);
   }
+
+  
+  list(): Observable<Movie[]>{
+    return this.http.get<Movie[]>(`${API}/movies`);
+  }
+
+   
+  getById(id: string): Observable<Movie>{
+    const uri = `${API}/movies/${id}`;
+    return this.http.get<Movie>(uri);
+  }
+
+  update(movie: Movie): Observable<Movie>{
+    const uri = `${API}/movies/${movie.id}`;
+    return this.http.put<Movie>(uri, movie);
+  }
+
+  delete(id: number): Observable<Movie>{
+    const uri = `${API}/movies/${id}`;
+    return this.http.delete<Movie>(uri);
+  }
+
+
+
+
+
+
 }

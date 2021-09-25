@@ -1,2 +1,28 @@
-<button mat-flat-button color="accent" (click)="createMovie()">Salvar</button>
-<button mat-flat-button color="danger" (click)="cancel()">Cancelar</button>
+<mat-card class="card-home mat-elevation-z3">
+  <mat-card-title class="card-title"> Cadastro de Filme </mat-card-title>
+  
+  <form>
+    <mat-form-field appearance="fill">
+        <input matInput placeholder="Título" name="title" [(ngModel)]="movie.title">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+        <input matInput placeholder="Diretor" name="director" [(ngModel)]="movie.director">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+        <input matInput placeholder="Genero" name="genres" [(ngModel)]="movie.genres">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+        <mat-label>Ano de Lançamento</mat-label>
+        <mat-select  [(value)]="movie.year">
+          <mat-option *ngFor="let y of years" [value]="y">{{y}}</mat-option>
+        </mat-select>
+    </mat-form-field>
+  </form>
+  
+  <div>
+    <button mat-flat-button color="primary" (click)="createMovie()">
+      Salvar
+    </button>
+    <button mat-flat-button color="warn" (click)="cancel()">Cancelar</button>
+  </div>
+</mat-card>

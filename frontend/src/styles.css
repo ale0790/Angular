@@ -29,3 +29,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .card-home .cart-subtitle{
     font-size: 0.8rem;
 }
+
+form { 
+    display: flex;
+    flex-direction: column;
+}
+
+

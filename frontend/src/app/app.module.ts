@@ -11,19 +11,28 @@ import { MatListModule } from "@angular/material/list";
 import { MatSidenavModule } from "@angular/material/sidenav";
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule} from '@angular/material/button';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
+import { MatTableModule } from '@angular/material/table';
 
 /** Components */
 import { AppComponent } from "./app.component";
 import { FooterComponent } from "./components/template/footer/footer.component";
 import { HeaderComponent } from "./components/template/header/header.component";
 import { NavigationComponent } from "./components/template/navigation/navigation.component";
+import { FormsModule } from '@angular/forms';
+
 
 /** Views */
 import { HomeComponent } from "./views/home/home.component";
 import { MoviesComponent } from './views/movies/movies.component';
 import { SeriesComponent } from './views/series/series.component';
 import { MovieCreateComponent } from './components/movie/movie-create/movie-create.component';
-import { SerieCreateComponent } from './components/series/serie-create/serie-create.component';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MovieListComponent } from './components/movie/movie-list/movie-list.component';
+import { MovieUpdateComponent } from './components/movie/movie-update/movie-update.component';
+import { MovieDeleteComponent } from './components/movie/movie-delete/movie-delete.component';
 
 @NgModule({
   declarations: [
@@ -35,8 +44,10 @@ import { SerieCreateComponent } from './components/series/serie-create/serie-cre
     MoviesComponent,
     SeriesComponent,
     MovieCreateComponent,
-    SerieCreateComponent
-    
+    MovieListComponent,
+    MovieUpdateComponent,
+    MovieDeleteComponent,
+   
   ],
   imports: [
     BrowserModule,
@@ -48,7 +59,13 @@ import { SerieCreateComponent } from './components/series/serie-create/serie-cre
     MatSidenavModule,
     MatCardModule,
     MatButtonModule,
-    HttpClientModule
+    HttpClientModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatSelectModule,
+    MatSnackBarModule,
+    FormsModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent],
