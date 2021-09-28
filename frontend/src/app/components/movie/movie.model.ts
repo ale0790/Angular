@@ -3,5 +3,5 @@ export interface Movie {
     title: string;
     director: string;
     genres: string;
-    year: number;
+    year: string;
 }

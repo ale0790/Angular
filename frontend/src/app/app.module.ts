@@ -3,6 +3,7 @@ import { BrowserModule } from "@angular/platform-browser";
 import { AppRoutingModule } from "./app-routing.module";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
 
 /** Material UI */
 import { MatToolbarModule } from "@angular/material/toolbar";
@@ -65,7 +66,8 @@ import { MovieDeleteComponent } from './components/movie/movie-delete/movie-dele
     MatSelectModule,
     MatSnackBarModule,
     FormsModule,
-    MatTableModule
+    MatTableModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],

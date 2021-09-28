@@ -9,6 +9,7 @@ import { SharedService } from '../../shared/shared.service';
   templateUrl: './movie-delete.component.html',
   styleUrls: ['./movie-delete.component.css']
 })
+
 export class MovieDeleteComponent implements OnInit {
 
   years =[2021,2020,2019,2018,2017,2016];
@@ -17,7 +18,7 @@ export class MovieDeleteComponent implements OnInit {
     title: '',
     director: '',
     genres: '',
-    year: NaN  
+    year: ''  
   };
 
 

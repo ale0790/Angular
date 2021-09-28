@@ -35,4 +35,17 @@ form {
     flex-direction: column;
 }
 
+.snack-message-sucess {
+    background-color: black;
+}
+
+.snack-message-error {
+    background-color: red;
+    color: white;
+}
+
+.snack-message-error button {
+    background-color:#f5f5f5;
+}
+
 
