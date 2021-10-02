@@ -16,6 +16,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatTableModule } from '@angular/material/table';
+import { MatDialogModule } from '@angular/material/dialog';
 
 /** Components */
 import { AppComponent } from "./app.component";
@@ -34,6 +35,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MovieListComponent } from './components/movie/movie-list/movie-list.component';
 import { MovieUpdateComponent } from './components/movie/movie-update/movie-update.component';
 import { MovieDeleteComponent } from './components/movie/movie-delete/movie-delete.component';
+import { DialogComponent } from './components/shared/dialog/dialog.component';
 
 @NgModule({
   declarations: [
@@ -48,6 +50,7 @@ import { MovieDeleteComponent } from './components/movie/movie-delete/movie-dele
     MovieListComponent,
     MovieUpdateComponent,
     MovieDeleteComponent,
+    DialogComponent,
    
   ],
   imports: [
@@ -67,7 +70,8 @@ import { MovieDeleteComponent } from './components/movie/movie-delete/movie-dele
     MatSnackBarModule,
     FormsModule,
     MatTableModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -33,9 +33,14 @@
                 <i class="material-icons">edit</i>
             </a>
 
-            <a routerLink="/movies/delete/{{movie.id}}" class="action delete">
+            <!-- <a routerLink="/movies/delete/{{movie.id}}" class="action delete">
                 <i class="material-icons">delete</i>
-            </a>
+            </a> -->
+
+            <a (click)="onDelete(movie.id)" class="action delete">
+              <i class="material-icons">delete</i>
+          </a>
+
         </td>
     </ng-container>
   
